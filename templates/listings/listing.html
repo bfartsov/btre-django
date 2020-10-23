@@ -91,7 +91,7 @@
             <ul class="list-group list-group-flush">
               <li class="list-group-item text-secondary">
                 <i class="fas fa-money-bill-alt"></i> Asking Price:
-                <span class="float-right">${{listing.price}}</span>
+                <span class="float-right">${{listing.price |intcomma}}</span>
               </li>
               <li class="list-group-item text-secondary">
                 <i class="fas fa-bed"></i> Bedrooms:
@@ -119,9 +119,7 @@
               </li>
               <li class="list-group-item text-secondary">
                 <i class="fas fa-calendar"></i> Listing Date:
-                <span class="float-right"
-                  >{{listing.list_date | timesince}}</span
-                >
+                <span class="float-right">{{listing.list_date }}</span>
               </li>
               <li class="list-group-item text-secondary">
                 <i class="fas fa-bed"></i> Realtor:
@@ -140,12 +138,12 @@
         <div class="card mb-3">
           <img
             class="card-img-top"
-            src="assets/img/realtors/kyle.jpg"
+            src="{{listing.realtor.photo.url}}"
             alt="Seller of the month"
           />
           <div class="card-body">
             <h5 class="card-title">Property Realtor</h5>
-            <h6 class="text-secondary">Kyle Brown</h6>
+            <h6 class="text-secondary">{{listing.realtor}}</h6>
           </div>
         </div>
         <button
