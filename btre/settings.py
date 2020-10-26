@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'realtors.apps.RealtorsConfig',
     'django.contrib.humanize',
     'accounts.apps.AccountsConfig',
+    'contacts.apps.ContactsConfig',
 ]
 
 MIDDLEWARE = [
@@ -142,3 +143,11 @@ MESSAGE_TAGS = {
     messages.ERROR: 'danger',
 
 }
+
+
+# email configuration
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_PORT = 465
+# EMAIL_HOST_USER = 'AwSxZ321'
+# EMAIL_HOST_PASSWORD = 'blagovest.fartsov@gmail.com'
+# EMAIL_USE_SSL = True
