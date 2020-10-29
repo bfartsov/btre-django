@@ -2,4 +2,4 @@
 
 build & deploy a real estate application using the Django framework & PostgreSQL 
 
-Follwoing - https://www.udemy.com/course/python-django-dev-to-deployment/
+Following - https://www.udemy.com/course/python-django-dev-to-deployment/
